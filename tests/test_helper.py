@@ -12,7 +12,7 @@ def test_operation(
 
     #test abra adding
     token1.approve(live_bribe, 2**256-1, {'from': token1_whale})
-    live_bribe.add_reward_amount(gauge1, token1, 1e18, {'from': token1_whale})
+    # live_bribe.add_reward_amount(gauge1, token1, 1e18, {'from': token1_whale})
     predicted = helper.getNewRewardPerToken.call(gauge1, token1)
     print(predicted)
 
